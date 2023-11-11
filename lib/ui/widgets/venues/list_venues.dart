@@ -15,6 +15,7 @@ class ListVenues extends StatelessWidget {
 
     if (listVenue != null) {
       return ListView.builder(
+        physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
         itemCount: listVenue?.length,
